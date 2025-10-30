@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftData
+
+@Model
+class WishlistModel {
+    var title:String
+    init(title: String) {
+        self.title = title
+    }
+}

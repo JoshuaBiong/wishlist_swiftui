@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
+
 
 struct ContentView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var wishes: [WishlistModel]
+   
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            
         }
-        .padding()
+        
     }
 }
 
